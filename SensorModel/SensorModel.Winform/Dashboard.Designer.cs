@@ -32,7 +32,6 @@
             Telerik.WinControls.UI.RadListDataItem radListDataItem2 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem3 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem4 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem5 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.CartesianArea cartesianArea1 = new Telerik.WinControls.UI.CartesianArea();
             Telerik.WinControls.UI.CategoricalAxis categoricalAxis1 = new Telerik.WinControls.UI.CategoricalAxis();
             Telerik.WinControls.UI.LinearAxis linearAxis1 = new Telerik.WinControls.UI.LinearAxis();
@@ -137,18 +136,17 @@
             // 
             // radDropDownListCount
             // 
-            radListDataItem1.Text = "Select";
-            radListDataItem2.Text = "5";
-            radListDataItem3.Text = "10";
-            radListDataItem4.Text = "20";
-            radListDataItem5.Text = "30";
+            radListDataItem1.Text = "5";
+            radListDataItem2.Text = "10";
+            radListDataItem3.Text = "20";
+            radListDataItem4.Text = "30";
             this.radDropDownListCount.Items.Add(radListDataItem1);
             this.radDropDownListCount.Items.Add(radListDataItem2);
             this.radDropDownListCount.Items.Add(radListDataItem3);
             this.radDropDownListCount.Items.Add(radListDataItem4);
-            this.radDropDownListCount.Items.Add(radListDataItem5);
             this.radDropDownListCount.Location = new System.Drawing.Point(552, 38);
             this.radDropDownListCount.Name = "radDropDownListCount";
+            this.radDropDownListCount.NullText = "Select";
             this.radDropDownListCount.Size = new System.Drawing.Size(125, 20);
             this.radDropDownListCount.TabIndex = 5;
             // 
@@ -178,6 +176,7 @@
             // 
             // radDateTimePickerEnd
             // 
+            this.radDateTimePickerEnd.Culture = new System.Globalization.CultureInfo("en-US");
             this.radDateTimePickerEnd.CustomFormat = "dd MMMM yyyy HH:mm:ss";
             this.radDateTimePickerEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.radDateTimePickerEnd.Location = new System.Drawing.Point(334, 39);
@@ -185,11 +184,12 @@
             this.radDateTimePickerEnd.Size = new System.Drawing.Size(164, 20);
             this.radDateTimePickerEnd.TabIndex = 1;
             this.radDateTimePickerEnd.TabStop = false;
-            this.radDateTimePickerEnd.Text = "15 Aralık 2021 22:48:00";
+            this.radDateTimePickerEnd.Text = "15 December 2021 22:48:00";
             this.radDateTimePickerEnd.Value = new System.DateTime(2021, 12, 15, 22, 48, 0, 0);
             // 
             // radDateTimePickerStart
             // 
+            this.radDateTimePickerStart.Culture = new System.Globalization.CultureInfo("en-US");
             this.radDateTimePickerStart.CustomFormat = "dd MMMM yyyy HH:mm:ss";
             this.radDateTimePickerStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.radDateTimePickerStart.Location = new System.Drawing.Point(101, 38);
@@ -197,7 +197,7 @@
             this.radDateTimePickerStart.Size = new System.Drawing.Size(164, 20);
             this.radDateTimePickerStart.TabIndex = 0;
             this.radDateTimePickerStart.TabStop = false;
-            this.radDateTimePickerStart.Text = "14 Aralık 2021 00:00:00";
+            this.radDateTimePickerStart.Text = "14 December 2021 00:00:00";
             this.radDateTimePickerStart.Value = new System.DateTime(2021, 12, 14, 0, 0, 0, 0);
             // 
             // radChartViewMotion

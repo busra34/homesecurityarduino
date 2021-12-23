@@ -103,7 +103,7 @@ namespace SensorModel.Winform
                 {
                     #region iki tarih arasında ve seçilen adet kadar mongo db'den veriler getirilir.
                     var list = chanell.feeds.AsQueryable().Where(m => m.created_at >= radDateTimePickerStart.Value.ToUniversalTime() && m.created_at <= radDateTimePickerEnd.Value.ToUniversalTime()).OrderByDescending(m => m.created_at
-                                ).ToList();
+                                ).Take(count).ToList();
                     list.All(m =>
                     {
                         m.created_at = m.created_at.ToLocalTime();

@@ -97,7 +97,7 @@ void loop() {
   else {
 
     
-    Serial.println("temprature:" + String(humidity) + "|humidity:" + String(temp_cel)); //değerler seri port'a gönderilir
+    Serial.println("temprature:" + String(temp_cel) + "|humidity:" + String(humidity)); //değerler seri port'a gönderilir
     distance = sonar.ping_cm(); //mesafe değeri okunur
     ppm = analogRead(AOUTpin); // ppm değerini Analog pinden oku (hava kalitesi)
     esik = digitalRead(DOUTpin); // eşik değerinin aşılıp aşılmadığını oku

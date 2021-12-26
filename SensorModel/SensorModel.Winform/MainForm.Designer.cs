@@ -188,7 +188,7 @@
             this.radialGaugeSingleLabel5});
             this.radRadialGaugePpm.Location = new System.Drawing.Point(242, 286);
             this.radRadialGaugePpm.Name = "radRadialGaugePpm";
-            this.radRadialGaugePpm.RangeEnd = 300D;
+            this.radRadialGaugePpm.RangeEnd = 750D;
             this.radRadialGaugePpm.Size = new System.Drawing.Size(234, 184);
             this.radRadialGaugePpm.StartAngle = 130D;
             this.radRadialGaugePpm.SweepAngle = 280D;
@@ -203,7 +203,7 @@
             this.radialGaugeArc13.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(206)))), ((int)(((byte)(103)))));
             this.radialGaugeArc13.DisabledTextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.radialGaugeArc13.Name = "radialGaugeArc13";
-            this.radialGaugeArc13.RangeEnd = 100D;
+            this.radialGaugeArc13.RangeEnd = 250D;
             this.radialGaugeArc13.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.radialGaugeArc13.UseCompatibleTextRendering = false;
             this.radialGaugeArc13.Width = 3D;
@@ -214,8 +214,8 @@
             this.radialGaugeArc14.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.radialGaugeArc14.DisabledTextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.radialGaugeArc14.Name = "radialGaugeArc14";
-            this.radialGaugeArc14.RangeEnd = 200D;
-            this.radialGaugeArc14.RangeStart = 101D;
+            this.radialGaugeArc14.RangeEnd = 500D;
+            this.radialGaugeArc14.RangeStart = 251D;
             this.radialGaugeArc14.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.radialGaugeArc14.UseCompatibleTextRendering = false;
             this.radialGaugeArc14.Width = 3D;
@@ -226,8 +226,8 @@
             this.radialGaugeArc15.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
             this.radialGaugeArc15.DisabledTextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.radialGaugeArc15.Name = "radialGaugeArc15";
-            this.radialGaugeArc15.RangeEnd = 300D;
-            this.radialGaugeArc15.RangeStart = 201D;
+            this.radialGaugeArc15.RangeEnd = 750D;
+            this.radialGaugeArc15.RangeStart = 501D;
             this.radialGaugeArc15.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.radialGaugeArc15.UseCompatibleTextRendering = false;
             this.radialGaugeArc15.Width = 3D;

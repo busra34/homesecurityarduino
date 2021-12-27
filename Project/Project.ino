@@ -13,6 +13,7 @@
 #define SSID "iPhone"      // "SSID-WiFiname"
 #define PASS "bm1bm1bm"       // "password"
 
+
 #define IP "184.106.153.149"// thingspeak.com ip, uno wifi modülü ile thingspeak.com ip'ye bağlanır
 
 
@@ -57,8 +58,9 @@ void setup() {
   pinMode(pinSpeaker, OUTPUT); //uno'da 5V güç çıkışı sağlanır ve buzzer çalışır
   pinMode(DOUTpin, INPUT); //hava kalitesi eşik değerinin okunduğu pin
 
-
+ 
   Serial.begin(115200); // wifi modülünü çalışması için baund değeri ayarlama
+
   Serial.println("AT"); //wifi modülüne bağlanma komut seti
   delay(3000); //wifi modülüne bağlanmak için gereken bağlanma süresi
 
@@ -68,6 +70,7 @@ void setup() {
   } else
   {
     Serial.println("not set");
+   
   }
 
   //Start
@@ -144,13 +147,13 @@ void sendThingSpeakValues() {
   cmd += tempC;
   cmd += "&field2=";  //field 2 for humidity
   cmd += String(humidity);
-  cmd += "&field3=";  //field 3 for FIR
+  cmd += "&field3=";  //field 3 for pir
   cmd += String(val);
   cmd += "&field4=";  //field 4 for distance
   cmd += String(distance);
   cmd += "&field5=";  //field 5 for
   cmd += String(ppm);
-  cmd += "&field6=";  //field 6 for thrashold
+  cmd += "&field6=";  //field 6 for treshold
   cmd += String(esik);
   cmd += "\r\n";
   Serial.print("AT+CIPSEND=");
